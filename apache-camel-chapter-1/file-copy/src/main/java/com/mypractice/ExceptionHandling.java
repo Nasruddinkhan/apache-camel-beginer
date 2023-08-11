@@ -4,7 +4,7 @@ import java.util.function.Consumer;
 
 public class ExceptionHandling {
     private ExceptionHandling(){}
-    static <T,E extends Exception> Consumer<T> handleExceptions(ExceptionConsumer<T> consumer) {
+    public static <T, E extends Exception> Consumer<T> handleExceptions(ExceptionConsumer<T> consumer) {
         return item -> {
             try {
                 consumer.accept(item);
