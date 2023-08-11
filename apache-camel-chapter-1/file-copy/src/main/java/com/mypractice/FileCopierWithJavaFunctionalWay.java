@@ -9,9 +9,7 @@ public class FileCopierWithJavaFunctionalWay {
     public static void main(String[] args) throws IOException {
         Path inboxDirectory = Path.of("D:\\Projects\\sftp-inbound");
         Path outboxDirectory = Path.of("D:\\Projects\\sftp-inbound\\files");
-
         Files.createDirectories(outboxDirectory);
-
         try (Stream<Path> directoryStream = Files.list(inboxDirectory)) {
             directoryStream
                     .filter(Files::isRegularFile)

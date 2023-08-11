@@ -3,7 +3,8 @@ package com.mypractice;
 import java.util.function.Consumer;
 
 public class ExceptionHandling {
-    static <T, E extends Exception> Consumer<T> handleExceptions(ExceptionConsumer<T, E> consumer) {
+    private ExceptionHandling(){}
+    static <T,E extends Exception> Consumer<T> handleExceptions(ExceptionConsumer<T> consumer) {
         return item -> {
             try {
                 consumer.accept(item);

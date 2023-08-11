@@ -9,7 +9,7 @@ public class FileCopierWithMoreFunctionalWay {
         Path inboxDirectory = Path.of("D:\\Projects\\sftp-inbound");
         Path outboxDirectory = Path.of("D:\\Projects\\sftp-inbound\\files");
         Files.createDirectories(outboxDirectory);
-        final ExceptionConsumer<Path, IOException> exceptionConsumer = (source) -> {
+        final ExceptionConsumer<Path> exceptionConsumer = source -> {
             Path dest = outboxDirectory.resolve(source.getFileName());
             Files.copy(source, dest);
         };
