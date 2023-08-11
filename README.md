@@ -1,2 +1,2 @@
-# apache-camel-beginer
-apache camel beginer
+# apache-camel-beginner
+apache camel beginner
