@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>apache-camel-content-base-routing</module>
+        <module>apache-camel-filter</module>
     </modules>
 
     <properties>
