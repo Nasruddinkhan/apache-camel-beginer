@@ -25,3 +25,4 @@ replay_pid*
 /.idea/
 /apache-camel-chapter-1/file-copy/target/
 /activemq-data/
+/apache-camel-chapter-2/apache-camel-content-base-routing/target/
