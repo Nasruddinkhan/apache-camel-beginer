@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
+@Deprecated
 public class CSVUtilParserMap {
     private static Map<Class<?>, Map<String, Field>> classFieldMap = new HashMap<>();
 

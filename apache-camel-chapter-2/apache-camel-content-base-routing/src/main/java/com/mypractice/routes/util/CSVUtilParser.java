@@ -12,6 +12,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * This is not used
+ */
+@Deprecated
 public class CSVUtilParser {
     public static <T> List<T> parseCSV(String csvFilePath, Class<T> targetType) {
         System.out.println("csvFilePath :::" +csvFilePath);

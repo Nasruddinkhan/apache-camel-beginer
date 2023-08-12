@@ -8,6 +8,7 @@ import java.io.File;
 import java.io.StringWriter;
 import java.util.List;
 
+@Deprecated
 public class JAXBUtil {
     public static <T> String marshal(T request) throws JAXBException {
         JAXBContext jaxbContext = JAXBContext.newInstance(request.getClass());
