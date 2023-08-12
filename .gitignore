@@ -24,3 +24,4 @@ hs_err_pid*
 replay_pid*
 /.idea/
 /apache-camel-chapter-1/file-copy/target/
+/activemq-data/
