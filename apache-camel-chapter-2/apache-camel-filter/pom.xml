@@ -35,7 +35,6 @@
         <artifactId>activemq-all</artifactId>
     </dependency>
 
-
     <!-- https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api -->
     <dependency>
         <groupId>javax.xml.bind</groupId>
