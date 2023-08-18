@@ -1,15 +1,18 @@
 It this setup a Camel route that reads files from a directory and publishes them to different ActiveMQ queues based on the file extension. This route is defined using the Camel DSL (Domain-Specific Language).
-
+===============================================================================================================================================================================================================
 1. Read File from Directory and Publish to jms:incomingProducts:
+
     `from("file:D:\\Projects\\sftp-inbound?noop=true")
     .log("Received file: ${header.CamelFileName}")
     .to("jms:incomingProducts");`
+
    1. The from statement specifies the source endpoint, which is a file endpoint in the directory `D:\\Projects\\sftp-inbound`.
    2. The noop=true parameter means that the file is not deleted after processing.
    3. The log statement logs a message indicating the name of the received file.
    4. The to statement sends the content of the received file to the jms:incomingProducts queue in ActiveMQ.
 
 2.  Publish to Different Queues Based on File Extension: 
+
     `from("jms:incomingProducts")
        .choice()
        .when(header("CamelFileName").endsWith(".json")).to("jms:jsonProducts")
