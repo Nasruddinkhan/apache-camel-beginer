@@ -14,6 +14,7 @@
     <modules>
         <module>apache-camel-content-base-routing</module>
         <module>apache-camel-filter</module>
+        <module>apache-camel-ftp-to-jms</module>
     </modules>
 
     <properties>
